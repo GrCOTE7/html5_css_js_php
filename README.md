@@ -1,4 +1,4 @@
-html5_css_php_js
+html5_css_js_php
 ================
 
 Synchronisation JS - PHP
