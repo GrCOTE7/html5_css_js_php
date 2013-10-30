@@ -28,6 +28,6 @@
             </section>
 
         </div>
-        <script src="html_js_php.js"></script>
+        <script src="html_css_js_php.js"></script>
     </body>
 </html>
