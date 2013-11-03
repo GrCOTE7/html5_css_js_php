@@ -21,7 +21,7 @@
 
             <section id ="calcul">
                 <?php
-                for ($index = 0; $index < 1e6; $index++) { //1e6
+                for ($index = 0; $index < 1e2; $index++) { //1e6
                     echo $index . ' ';
                 }
                 ?>
