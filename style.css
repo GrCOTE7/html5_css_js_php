@@ -116,6 +116,7 @@ header, section, footer {
   white-space: nowrap;
   border-left: 1px solid rgba(0,0,255,0.1);
 }
+
 #calcul li:last-child{
   border-right: none;
 }
