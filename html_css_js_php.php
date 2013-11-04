@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <title>HTML JS PHP | Li</title>
         <link rel="stylesheet" href="style.css">
-
     </head>
+    
     <body>
         <div id="etude_chronologie">
 
