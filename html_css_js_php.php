@@ -22,7 +22,7 @@
             <section id ="calcul">
                 <?php
                 for ($index = 0; $index < 1e6; $index++) { //1e6
-                    echo $index . ' ';
+                    echo number_format($index,0,'.','&nbsp;') . ' | ';
                 }
                 ?>
             </section>
