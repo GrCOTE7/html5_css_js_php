@@ -8,7 +8,12 @@
 
   <body>
     <div id="etude_chronologie">
-
+      <section>
+        <form name="nnn" action="ajoute_un.php">
+          <input type="submit" value="bbb" />
+          <input type="hidden" name="nn" value="7" />
+        </form>
+      </section>
       <section>
         html5
       </section>
