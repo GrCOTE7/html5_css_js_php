@@ -8,14 +8,12 @@
 
   <body>
     <div id="etude_chronologie">
+
       <section>
-        <form name="nnn" action="ajoute_un.php">
+        html5 <form name="nnn" action="ajoute_un.php" style="display:inline-block">
           <input type="submit" value="bbb" />
           <input type="hidden" name="nn" value="7" />
         </form>
-      </section>
-      <section>
-        html5
       </section>
 
       <section id='myScreen' class="red">
@@ -26,15 +24,16 @@
 
       <section id ="calcul">
         <ul>
+          <li>
           <?php
 //          for ($index = 1; $index < 1e5; $index++) { //1e6
-          for ($index = 1e5; $index < (1e5+1e2); $index++) { //1e6
-            echo '<li>';
-            echo number_format($index, 0, '.', ' ');
-            echo ' ';
-            echo '</li>';
-          }
+//          for ($index = 1e5; $index < (1e5 + 1e2); $index++) { //1e6
+//            echo number_format($index, 0, '.', ' ');
+//            echo '</li>';
+//          }
           ?>
+          <div id='aff_js'></div>
+        </li>
         </ul>
       </section>
 
