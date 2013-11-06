@@ -1,4 +1,6 @@
 //document.write('js');
 
-document.getElementById('myScreen').innerHTML = 'Calcul Terminé.';
+var output = document.getElementById('myScreen');
+output.innerHTML = 'Calcul Terminé.';
+output.style.color = 'green';
 

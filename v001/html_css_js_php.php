@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML JS PHP | Li</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../sys/css/style.css">
   </head>
 
   <body>
