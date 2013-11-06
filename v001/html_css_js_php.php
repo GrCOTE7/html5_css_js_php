@@ -14,16 +14,14 @@
       </section>
 
       <section id='myScreen' class="red">
-        <script>
-          document.getElementById('myScreen').innerHTML = 'Je calcule...';
-        </script>
+        Je calcule...
       </section>
 
       <section id ="calcul">
         <ul>
           <?php
-//          for ($index = 1; $index < 1e5; $index++) { //1e6
-          for ($index = 1e5; $index < (1e5 + 1e2); $index++) { //1e6
+          for ($index = 1; $index < 1e5; $index++) { //1e6
+//          for ($index = 1e5; $index < (1e5 + 1e2); $index++) { //1e6
             echo '<li>';
             echo number_format($index, 0, '.', ' ');
             echo ' ';

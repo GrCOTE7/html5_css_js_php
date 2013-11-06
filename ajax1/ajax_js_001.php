@@ -2,8 +2,6 @@
 //
 $page_title = 'Objects / JS';
 $param_c7 = array(0, 0, $page_title);
-include_once('../../../../../header_ca.php');
-require_once '../../../header.php';
 //
 ?>
 <style>
@@ -34,26 +32,10 @@ require_once '../../../header.php';
 </style>
 <div id='test_jq'><i>Go<b>7P</b> !</i></div>
 <div id='aff_js'></div>
-<!--<input type='text' id='myInput' value='' placeholder='votre_email@email.com' />-->
 <div id='myText'></div>
 <a href="#" id='myLink' style="display:none;"></a>
 
-<p>
-  Survolez le bouton du fichier pour voir le contenu :
-</p>
-
-<p><center>
-  <input type="button" value="file1.txt" />
-  <input type="button" value="file2.txt" />
-  <input type="button" value="file3.php" />
-</center></p>
-
-<div id="progression">
-  <div></div>
-</div>
-
 <p id="fileContent" class="retourAjax">
-  <span>Aucun fichier chargé</span>
 </p>
 
 <script type="text/javascript" src="ajax_js_001.js"></script>
@@ -71,6 +53,3 @@ require_once '../../../header.php';
       myMsg.style.display = 'none';
   })();
 </script>
-<?php
-include_once '../../../footer.php';
-footerC7($heurea);

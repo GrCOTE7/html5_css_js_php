@@ -4,8 +4,10 @@
 //for ($index = 0; $index < 1e7; $index++) {
 //  
 //}
-sleep(3);
+//sleep(1);
 
 
-var_dump($_GET);
-echo utf8_decode('Voilà le contenu d\'un 3<sup>ème</sup> fichier généré/PHP.');
+//var_dump($_GET);
+$get = filter_input_array(INPUT_GET);
+$n=$get['value']+1;
+echo utf8_decode($n);
