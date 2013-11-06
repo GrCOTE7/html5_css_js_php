@@ -1,9 +1,11 @@
 (function() {
 
-  var deb = document.getElementById('html'),
-      rep = document.getElementById('myScreen'),
-      progressBar = document.getElementById('maBar'),
-      valeur = 0;
+  var deb = document.querySelector('#html'),
+      rep = document.querySelector('#myScreen'),
+      progressBar = document.querySelector('#maBar'),
+      valeur = 749,
+      debut = valeur;
+
 
   deb.style.fontSize = '25px';
   rep.innerHTML = 'Calcul en Cours...';
@@ -12,9 +14,9 @@
   monTimer = setTimeout(function() {
 
     while (!isNaN(valeur)) {
-      progressBar.value = (valeur * 100 / 1e3);
-      valeur = ajaxli(valeur).done().responseText;
+      progressBar.value = ((valeur * 100 - debut) / (1e3 - debut - 1));
       deb.innerHTML = ' Fini avec ' + number_format(valeur) + ' comme dernière valeur';
+      valeur = ajaxli(valeur).done().responseText;
     }
 
     rep.innerHTML = 'Calcul terminé.';
