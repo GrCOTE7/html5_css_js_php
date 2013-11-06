@@ -7,3 +7,7 @@ if ($n > $get['fin']) {
   $n = 'fini';
 }
 echo $n;
+
+
+for ($index = 0; $index < 1e6; $index++) {
+}
