@@ -14,8 +14,8 @@
   monTimer = setTimeout(function() {
 
     while (!isNaN(valeur)) {
-      progressBar.value = ((valeur * 100 - debut) / (999 - debut));
-      deb.innerHTML = ' Fini avec ' + number_format(valeur) + ' comme dernière valeur';
+      progressBar.value = ((valeur * 100 - debut) / (1000 - debut));
+      deb.innerHTML = ' Fini avec ' + number_format( ((valeur - debut) * 100) / (1000 - debut) ) + ' comme dernière valeur<hr>'+debut+' v = '+ valeur;
       valeur = ajaxli(valeur).done().responseText;
     }
 
