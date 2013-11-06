@@ -19,7 +19,7 @@
 // ON AFFICHE UNE SECONDE LIGNE DANS LE DIV
     obj1.innerHTML += "Apres la requete : OK<br />";
 // ON AFFICHE LE RESULTAT DANS LE DIV
-    res = "Contenu du fichier : " + xhr_object.responseText;
+    res = "Contenu du fichier : " + xhr_object.responseText + '<br><i>Et fin du script JS</i>';
     obj1.innerHTML += res;
 
 
@@ -60,6 +60,6 @@
     obj2.innerHTML += "Apres la requete : OK<br />";
 // ON AFFICHE LE RESULTAT DANS LE DIV
     res = "Contenu du fichier : " + xhr_object.responseText;
-    obj2.innerHTML += res;
+    obj2.innerHTML += res + '<br><i>Et fin du script JS</i><br>';
   })();
 </script>
