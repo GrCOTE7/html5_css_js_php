@@ -1,9 +1,4 @@
 (function() {
-  
-  var jli = document.createElement("script");
-  jli.type = "text/javascript";
-  jli.src = '../sys/lib/fct_li-0.0.1.js';
-  document.body.appendChild(jli);
 
   var deb = document.getElementById('html'),
       rep = document.getElementById('myScreen'),
