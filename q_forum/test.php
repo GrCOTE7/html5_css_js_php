@@ -12,15 +12,12 @@
   while (i < 30) {
     setTimeout(function afficheDiv() {
       if (i % 3 === 0) {
-        maDiv = document.querySelector('#maDiv' + i);
+        maDiv = document.querySelector('#maDiv' + i % 3 + 1);
         maDiv.innerHTMl = 'Passage ' + i;
+        maDiv.style.display = 'block';
       }
-      var id = "maDiv" + i;
-//      var maDiv = document.getElementById(id);
-      maDiv.style.display = 'block';
       i++;
     }, 2000);
   }
 </script>
-  <?php
 
