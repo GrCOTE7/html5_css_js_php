@@ -3,7 +3,7 @@
   var deb = document.querySelector('#html'),
       rep = document.querySelector('#myScreen'),
       progressBar = document.querySelector('#maBar'),
-      valeur = 749,
+      valeur = 805,
       debut = valeur;
 
 
@@ -14,7 +14,7 @@
   monTimer = setTimeout(function() {
 
     while (!isNaN(valeur)) {
-      progressBar.value = ((valeur * 100 - debut) / (1e3 - debut - 1));
+      progressBar.value = ((valeur * 100 - debut) / (999 - debut));
       deb.innerHTML = ' Fini avec ' + number_format(valeur) + ' comme dernière valeur';
       valeur = ajaxli(valeur).done().responseText;
     }
@@ -29,13 +29,14 @@
   function ajaxli(value) {
 
     $.ajaxSetup({async: false});
-    progressBar.value = (valeur * 100 / 1e3);
+
     var request = $.ajax({
       url: "ajoute_un.php",
       data: {
         value: value
       },
       success: function(retour) {
+
 
         if (!isNaN(retour)) {
           $('#aff_js').html($('#aff_js').html() + '<li>' + number_format(retour) + '</li>');
