@@ -7,9 +7,12 @@
       valeur = 805,
       debut = valeur,
       fin = 1e3;
-//
+  //
+  NotifierjsConfig.notificationStyles.width = '200px';
   deb.style.fontSize = '25px';
+  //
   rep.innerHTML = 'Calcul en Cours...';
+  Notifier.c7('Début du Comptage', 'De ' + debut + ' à...');
 
   list_ul.innerHTML = '<ul id=\'myList\'>';
 
@@ -20,6 +23,7 @@
       deb.innerHTML = ' Fini avec ' + number_format(valeur) + ' comme dernière valeur';
       valeur = ajaxli(valeur).done().responseText;
     }
+    Notifier.success('Comptage Terminé !', '... ' + fin);
     rep.innerHTML = 'Calcul terminé.';
     rep.style.color = 'green';
   }, 100);
