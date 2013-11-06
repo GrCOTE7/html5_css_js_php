@@ -15,7 +15,7 @@
 
     while (!isNaN(valeur)) {
       progressBar.value = ((valeur * 100 - debut) / (1000 - debut));
-      deb.innerHTML = ' Fini avec ' + number_format( ((valeur - debut) * 100) / (1000 - debut) ) + ' comme dernière valeur<hr>'+debut+' v = '+ valeur;
+      deb.innerHTML = ' Fini avec ' + number_format(valeur) + ' comme dernière valeur<hr>';
       valeur = ajaxli(valeur).done().responseText;
     }
 
