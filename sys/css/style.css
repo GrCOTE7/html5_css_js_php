@@ -80,6 +80,7 @@ header, section, footer {
   border-radius: 7px;
   margin:7px 3px;
   padding: 7px 15px;
+  /*transition: ease all 1s;*/
 }
 
 /*Pour html_js_php*/
@@ -95,27 +96,91 @@ header, section, footer {
 #calcul{
   color:turquoise;
   text-wrap: initial;
+  /*text-align: center;*/
 }
 
 #calcul ul{
+  /*display: table;*/
   font-size: 18px;
   list-style-type: none;
-  margin: 0 10px;
-  padding: 0 0 0 10px;
+  margin: 0 auto;
+  /*padding: 0 0 0 10px;*/
+  padding: 0;
   border: 2px solid orange;
-
+  width:95%;
   border-radius: 7px;
   background-color: lightgoldenrodyellow;
 }
 
 #calcul li{
-  width:70px;
+  /*text-align: center;*/
   display: inline-block;
+  width:75px;
   text-align: right;
-  margin: 0 15px;
+  margin: 0 5px;
+  padding: 0 0 0 5px;
+
   white-space: nowrap;
   border-left: 1px solid rgba(0,0,255,0.1);
 }
 #calcul li:last-child{
-  border-right: none;
+  /*border-right: none;*/
+}
+
+#calcul progress {
+  display: block;
+  width: 95%;
+  height: 2em;
+  margin: .5em auto;
+  border: 3px solid white;
+  background-color: #d4d4d4;
+  box-shadow: 0 0 0 3px #b6b6b6;
+  border-radius: 7px;
+}
+
+@-webkit-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+@-moz-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+@keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+#calcul progress::-webkit-progress-bar {
+  border-radius: 5px;
+  background-color: #d4d4d4;
+}
+#calcul progress::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: #a5d62f;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -webkit-animation: progress 8s linear infinite;
+  animation: progress 8s linear infinite;
+}
+
+#calcul progress::-moz-progress-bar {
+  border-radius: 5px;
+  background-color: #a5d62f;
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -moz-animation: progress 8s linear infinite;
+  animation: progress 8s linear infinite;
 }
