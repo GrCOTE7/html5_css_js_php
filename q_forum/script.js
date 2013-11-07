@@ -7,6 +7,9 @@ var monTimer = setInterval(function() {
   maDiv = document.querySelector('#maDiv' + (i % 3));
   maDiv.style.display = 'block';
   i++;
-  if (i > 30)
+  if (i > 6) {
     clearInterval(monTimer);
+    maDiv.innerHTML = 'Fin.';
+  }
+
 }, 2000);
