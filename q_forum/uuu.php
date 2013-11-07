@@ -15,25 +15,21 @@
   </head>
 
   <body>
-    <div id="etude_chronologie">
+<span id="texteJQ" ></span>
 
-      <section id='html'>
-        html5
-      </section>
+<button onclick="incrementer()">Cliquer pour incrémenter la variable p</button>
+<?php
+$p = 0;
+echo '<span id="nbre">' . $p . '</span>';
+?>
+<script>
+  function incrementer() {
+    nbclick = document.getElementById('nbre');
+    nbclick.innerHTML = parseInt(nbclick.innerHTML) + 1;
+  }
+  
+  $(function() {
+    $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
+  })();
 
-      <section id='myScreen' class="red">
-        Calcul en Cours...
-      </section>
-
-
-      <section id ="calcul">
-        <progress id='maBar' value='0' max='100'></progress>
-
-        <div id='list_ul'></div>
-
-      </section>
-
-    </div>
-    <script src="jquery_ajax.js"></script>
-  </body>
-</html>
+</script>

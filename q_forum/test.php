@@ -15,6 +15,17 @@
   </head>
 
   <body>
+    <?php
+    $a=24996;
+    
+    
+    echo floor($a/100)*100;;
+    
+    
+    
+    ?>
+    <hr>
+    
     <!--<div id="maDivLi"></div>-->
     <div id="maDiv0" style="display:none;">
       <p>Div 1</p>

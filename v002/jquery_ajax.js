@@ -4,7 +4,7 @@
       rep = document.querySelector('#myScreen'),
       progressBar = document.querySelector('#maBar'),
       list_ul = document.querySelector('#list_ul'),
-      valeur = 995,
+      valeur = 998,
       debut = valeur,
       fin = 1e3;
   //
@@ -19,16 +19,17 @@
   monTimer = setTimeout(function() {
 
     while (!isNaN(valeur)) {
-      progressBar.value = ((valeur * 100 - debut) / (fin - debut));
-      deb.innerHTML = ' Fini avec ' + number_format(valeur) + ' comme dernière valeur';
+//      progressBar.value = ((valeur * 100 - debut) / (fin - debut));
+//      deb.innerHTML = ' Fini: Dernière valeur = ' + number_format(valeur);
       valeur = ajaxli(valeur).done().responseText;
     }
     Notifier.success('Comptage Terminé !', '... ' + fin);
     rep.innerHTML = 'Calcul terminé.';
     rep.style.color = 'green';
+    clearInterval(monTimer);
   }, 100);
 
-  function ajaxli(value) {
+  function ajaxli(value, rep) {
 
     $.ajaxSetup({async: false});
 
@@ -40,7 +41,11 @@
       },
       success: function(retour) {
         if (!isNaN(retour)) {
-          rep.innerHTML = 'ok';
+          
+          var deb = document.getElementById('html');
+          deb.innerHTML = retour;
+
+
           $('#myList').html($('#myList').html() + '<li>' + number_format(retour) + '</li>');
         }
       }
