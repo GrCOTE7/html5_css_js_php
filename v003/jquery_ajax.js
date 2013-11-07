@@ -11,19 +11,20 @@
   NotifierjsConfig.notificationStyles.width = '200px';
   deb.style.fontSize = '25px';
   //
-  rep.innerHTML = 'Calcul en Cours...';
+  rep.innerHTML = 'Calcul en Cours... (Généré / PHP)';
   Notifier.c7('Début du Comptage', 'De ' + debut + ' à...');
-
-
-
 
 
   list_ul.innerHTML = '<ul id=\'myList\'>';
 
   var monTimer = setInterval(function() {
-deb.style.textAlign='center';
+
+    deb.style.textAlign = 'center';
     deb.innerHTML = debut + ' <= ' + number_format(i) + ' <= ' + number_format(fin);
+
+
     i = ajaxli(i, rep).done().responseText;
+
 
     valeur = i;
     progressBar.value = ((valeur - debut) * 100 / (fin - debut));
