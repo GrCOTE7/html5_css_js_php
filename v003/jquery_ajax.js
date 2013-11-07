@@ -21,8 +21,8 @@
   list_ul.innerHTML = '<ul id=\'myList\'>';
 
   var monTimer = setInterval(function() {
-
-    deb.innerHTML = debut + '<hr>' + number_format(i) + '<hr>' + number_format(fin);
+deb.style.textAlign='center';
+    deb.innerHTML = debut + ' <= ' + number_format(i) + ' <= ' + number_format(fin);
     i = ajaxli(i, rep).done().responseText;
 
     valeur = i;
