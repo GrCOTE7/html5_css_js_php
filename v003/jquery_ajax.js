@@ -4,9 +4,9 @@
       rep = document.querySelector('#myScreen'),
       progressBar = document.querySelector('#maBar'),
       list_ul = document.querySelector('#list_ul'),
-      valeur = 998,
-      debut = valeur,
-      fin = 1e3;
+      debut = 777,
+      fin = 1e3,
+      i = debut;
   //
   NotifierjsConfig.notificationStyles.width = '200px';
   deb.style.fontSize = '25px';
@@ -15,9 +15,7 @@
   Notifier.c7('Début du Comptage', 'De ' + debut + ' à...');
 
 
-  debut = 777;
-  fin = 1e3;
-  var i = 0;
+
 
 
   list_ul.innerHTML = '<ul id=\'myList\'>';
