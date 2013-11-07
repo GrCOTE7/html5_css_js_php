@@ -12,23 +12,21 @@
     <script src="../sys/lib/fct_li-0.0.1.js"></script>
 
     <link rel="stylesheet" href="../sys/css/style.css">
+    <style>
+      .blue{
+        color:blue;
+      }
+      .red{
+        color:red;
+      }
+    </style>
   </head>
-  <style>
-    .blue{
-      color:blue;
-    }
-    .red{
-      color:red;
-    }
-  </style>
   <body><p>
       <?php
       $nb_add = 7;
       for ($i = 0; $i <= $nb_add; $i++) {
         echo '<div class=' . (($i % 4 == $i % 2) ? 'blue' : 'red') . '>' . $i . '</div>';
       }
-
-
       ?>
     </p>
   </body>
