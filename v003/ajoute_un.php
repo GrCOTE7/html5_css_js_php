@@ -7,6 +7,6 @@ if ($n > $get['fin']) {
   $n = 'fini';
 }
 
-sleep(1);
+sleep(0.01);
 
 echo $n;

@@ -36,6 +36,7 @@
       rep.style.color = 'green';
       rep.innerHTML = 'Calcul terminé.';
       list_ul.innerHTML = list_ul.innerHTML + '</ul>';
+      progressBar.value = 0;
 
     }
 
