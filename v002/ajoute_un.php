@@ -6,6 +6,9 @@ $n = $get['value'] + 1;
 if ($n > $get['fin']) {
   $n = 'fini';
 }
+
+sleep(1);
+
 echo $n;
 
 

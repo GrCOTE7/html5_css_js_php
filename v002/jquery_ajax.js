@@ -4,7 +4,7 @@
       rep = document.querySelector('#myScreen'),
       progressBar = document.querySelector('#maBar'),
       list_ul = document.querySelector('#list_ul'),
-      valeur = 905,
+      valeur = 995,
       debut = valeur,
       fin = 1e3;
   //
@@ -40,6 +40,7 @@
       },
       success: function(retour) {
         if (!isNaN(retour)) {
+          rep.innerHTML = 'ok';
           $('#myList').html($('#myList').html() + '<li>' + number_format(retour) + '</li>');
         }
       }
