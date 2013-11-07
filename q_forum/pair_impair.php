@@ -29,7 +29,6 @@
       }
 
 
-      $req->execute(array((empty($_POST['nom']) ? '*' : $_POST['nom']), (empty($_POST['prenom']) ? '*' : $_POST['prenom']), (empty($_POST['etage']) ? '*' : $_POST['etage'])));
       ?>
     </p>
   </body>
