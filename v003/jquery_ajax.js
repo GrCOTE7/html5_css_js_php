@@ -28,7 +28,8 @@
   debut = 0;
   fin = 1000;
   var nnn = document.querySelector('#nnn');
-  for (i = 0; i <= 100000; i++) {
+  
+  for (i = 0; i <= 10000; i++) {
     nnn.value = number_format(i);
     valeur = i;
   }
