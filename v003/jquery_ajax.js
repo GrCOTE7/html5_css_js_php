@@ -4,7 +4,7 @@
       rep = document.querySelector('#myScreen'),
       progressBar = document.querySelector('#maBar'),
       list_ul = document.querySelector('#list_ul'),
-      debut = 777,
+      debut = 987,
       fin = 1e3,
       i = debut;
   //
@@ -20,13 +20,13 @@
   var monTimer = setInterval(function() {
 
     deb.style.textAlign = 'center';
-    deb.innerHTML = debut + ' <= ' + number_format(i) + ' <= ' + number_format(fin);
 
 
     i = ajaxli(i, rep).done().responseText;
 
 
     valeur = i;
+    deb.innerHTML = debut + ' <= ' + number_format(i) + ' <= ' + number_format(fin);
     progressBar.value = ((valeur - debut) * 100 / (fin - debut));
 
     if (i >= fin) {
