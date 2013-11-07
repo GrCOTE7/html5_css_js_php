@@ -30,10 +30,14 @@ p{
   font-size: 16px;
 }
 
-.true{
+.blue{
+  color: blue;
+}
+
+.true, .green{
   color:green;
 }
-.false{
+.false, .red {
   color:red;
 }
 strong{
@@ -94,10 +98,6 @@ header, section, footer {
 
 #etude_chronologie{
   color:blue;
-}
-
-.red{
-  color:red;
 }
 
 #calcul{
