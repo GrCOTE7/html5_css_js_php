@@ -16,22 +16,44 @@
 
   <body>
     <span id="texteJQ" ></span>
-
     <button onclick="incrementer();">Cliquer pour incrémenter la variable p</button>
-    <?php
+ <?php
     $p = 0;
     echo '<span id="nbre">' . $p . '</span>';
     ?>
+
+    <div>Elément 0</div>
+    <div>Elément 1</div>
+    <div>Elément 2</div>
+    <div>Elément 3</div>
+    <div>Elément 4</div>
+    <div>Elément 5</div>
+    <div>Elément 6</div>
+    <div>Elément 7</div>
+    <div>Elément 8</div>
+    <div>Elément 9</div>
+
+   
     <script>
       function incrementer() {
         nbclick = document.getElementById('nbre');
         nbclick.innerHTML = parseInt(nbclick.innerHTML) + 1;
       }
 
-      $(function() {
-        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
-      });
+//      $(function() {
+//        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
+//      });
 
+      var divs = document.getElementsByTagName('div'),
+          divsLen = divs.length;
+
+      for (var i = 0; i < divsLen; i++) {
+
+        setTimeout(function() {
+          divs[i].style.display = 'none';
+        }, 200 * i); // Le temps augmentera de 200 ms à chaque élément
+
+      }
     </script>
   </body>
 </html>
