@@ -15,21 +15,23 @@
   </head>
 
   <body>
-<span id="texteJQ" ></span>
+    <span id="texteJQ" ></span>
 
-<button onclick="incrementer()">Cliquer pour incrémenter la variable p</button>
-<?php
-$p = 0;
-echo '<span id="nbre">' . $p . '</span>';
-?>
-<script>
-  function incrementer() {
-    nbclick = document.getElementById('nbre');
-    nbclick.innerHTML = parseInt(nbclick.innerHTML) + 1;
-  }
-  
-  $(function() {
-    $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
-  })();
+    <button onclick="incrementer();">Cliquer pour incrémenter la variable p</button>
+    <?php
+    $p = 0;
+    echo '<span id="nbre">' . $p . '</span>';
+    ?>
+    <script>
+      function incrementer() {
+        nbclick = document.getElementById('nbre');
+        nbclick.innerHTML = parseInt(nbclick.innerHTML) + 1;
+      }
 
-</script>
+      $(function() {
+        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
+      });
+
+    </script>
+  </body>
+</html>
