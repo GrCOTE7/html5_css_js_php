@@ -21,13 +21,7 @@
   </head>
 
   <body>
-    <span id="texteJQ" ></span>
-    <!--<button onclick="incrementer();">Cliquer pour incrémenter la variable p</button>-->
-    <?php
-//    $p = 0;
-//    echo '<span id="nbre">' . $p . '</span>';
-    ?>
-
+    
     <div>Elément 0</div>
     <div>Elément 1</div>
     <div>Elément 2</div>
@@ -38,19 +32,11 @@
     <div>Elément 7</div>
     <div>Elément 8</div>
     <div>Elément 9</div>
-
-
-    <script>
-//      function incrementer() {
-//        nbclick = document.getElementById('nbre');
-//        nbclick.innerHTML = parseInt(nbclick.innerHTML) + 1;
-//      }
-
-      $(function() {
-        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
-      });
-
-    </script>
+<!--
+//      $(function() {
+//        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
+//      });
+-->
     <script src="uuu.js"></script>
   </body>
 </html>
