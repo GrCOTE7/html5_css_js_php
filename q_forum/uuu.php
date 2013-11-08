@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="../sys/css/style.css">
      <style>
       div {
-        /*display: none;*/
+        display: none;
         margin: 5px;
       }
     </style>
   </head>
 
   <body>
-    <span id="texteJQ" ></span>
-    <button onclick="incrementer();">Cliquer pour incrémenter la variable p</button>
+<!--    <span id="texteJQ" ></span>
+    <button onclick="incrementer();">Cliquer pour incrémenter la variable p</button>-->
  <?php
-    $p = 0;
-    echo '<span id="nbre">' . $p . '</span>';
+//    $p = 0;
+//    echo '<span id="nbre">' . $p . '</span>';
     ?>
 
     <div>Elément 0</div>
@@ -50,16 +50,8 @@
 //        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
 //      });
 
-      var divs = document.getElementsByTagName('div'),
-          divsLen = divs.length;
-
-      for (var i = 0; i < divsLen; i++) {
-
-        setTimeout(function() {
-          divs[i].style.display = 'block';
-        }, 200 * i); // Le temps augmentera de 200 ms à chaque élément
-
-      }
+     
     </script>
+        <script src="uuu.js"></script>
   </body>
 </html>
