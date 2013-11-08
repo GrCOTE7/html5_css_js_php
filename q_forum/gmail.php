@@ -15,12 +15,15 @@ $result = imap_fetch_overview($boite, "1:{$MC->Nmsgs}", 0);
 foreach ($result as $overview) {
   $overview->msgno; // Ici, on s'en fout, donc on l'affiche pas <img src="../../bundles/tinymce/vendor/tiny_mce/plugins/emotions/img/smile.png" title=":)" alt=":)">
   $expediteur = utf8_decode(imap_utf8($overview->from)); // Ici, on récupère et décode l'expediteur
+
+  $expediteur2 = imap_mime_header_decode($overview->from); // Ici, on récupère et décode l'expediteur
+
   $date_mail = $overview->date; // Ici, on récupère la date du mail
   $sujet = utf8_decode(imap_utf8($overview->subject)); // Ici, on récupère et décode le sujet
 
   echo "<li>";
   echo "Sujet : <b>" . $sujet . "</b><br>";
-  echo "De : " . $expediteur . " - ";
+  echo "De : " . $expediteur2 . " - ";
   echo "Le : " . $date_mail . " ";
   echo "</li><hr>";
 }
