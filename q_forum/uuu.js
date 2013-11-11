@@ -1,5 +1,6 @@
 var divs = document.getElementsByTagName('div'),
-    divsLen = divs.length;
+    rep = document.querySelector('#rep');
+divsLen = divs.length;
 
 console.log(divsLen);
 
@@ -12,3 +13,24 @@ for (var i = 0; i < divsLen; i++) {
 
   })(i);
 }
+
+
+
+var job = 'AGENT',
+b = job.substring(0,2).toLowerCase()+job.substring(2);
+
+
+
+
+
+
+
+
+rep.innerHTML = b;
+rep.innerHTML+='<hr>';
+
+
+
+
+
+
