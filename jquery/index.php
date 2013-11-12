@@ -9,30 +9,47 @@
 
     <link rel="stylesheet" href="../sys/css/style.css">
 
+
+    <style type="text/css">
+      span{display: block;}
+      .rouge { color: red; }
+      .vert { color: green; 
+      font-size:150%}
+      .petit { font-size: 100%; }
+      .grand {font-size: 250%; }
+    </style>
+
   </head>
 
   <body>
-    <!--<span id='texteJQ'></span>-->
+    <span id='texteJQ'></span>
 
- <form>
+
+
+    <form>
       Nom d'utilisateur
-      <input type="text" name="nom"><br />
+      <input type="text" id="nom"><br />
  
       Mot de passe
-      <input type="password" name="pass"><br />
+      <input type="password" id="pass"><br />
  
-      Sexe
-      Homme <input type="radio" name="sexe" value="H">
-      Femme <input type="radio" name="sexe" value="F"><br />
+      Sexe 
+      H <input type="radio" id="sexe" name="H" value="H">
+      F <input type="radio" id="sexe" name="F" value="F"><br />
  
-      Commentaires
-      <textarea rows="3" name="commentaires">Tapez vos commentaires ici</textarea><br />
+      Fonction
+      <select id="fonction">
+        <option VALUE="etudiant">Etudiant</option>
+        <option VALUE="ingenieur">Ingénieur</option>
+        <option VALUE="enseignant">Enseignant</option>
+        <option VALUE="retraite">Retraité</option>
+        <option VALUE="autre">Autre</option>
+      </select><br /><br />
  
-      <input type="image" src="img/chat.jpg" alt=" "><br />
- 
-      <input type="submit" value="Envoyer">
-      <input type="reset" value="Annuler">
+      <input type="submit" id="envoyer" value="Envoyer">
+      <input type="reset" id="annuler" value="Annuler">
     </form> 
+
 
 
     <script src="../sys/lib/jquery-2.0.3.min.js"></script>
