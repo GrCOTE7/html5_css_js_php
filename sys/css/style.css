@@ -202,5 +202,13 @@ header, section, footer {
 
 #uuu div{
   background-color: aqua;
+}
 
+#page_cible {
+  background-color: aqua;
+}
+/*#page_cible>#document>html>body>h3 {*/
+#nnn {
+  background-color: red;
+  color:red;
 }

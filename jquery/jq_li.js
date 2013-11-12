@@ -65,6 +65,7 @@ $(function() {
 $('#page_cible').css('color','blue');
 
 
+output.html($('#page_cible').value);
 
 
 
