@@ -29,33 +29,34 @@ $(function() {
 
 
 
-/*
-  for (a = 0; a < 62; a++) {
-    for (b = 0; b < 62; b++) {
-      for (c = 0; c < 62; c++) {
-        for (d = 0; d < 62; d++) {
-          for (e = 0; e < 62; e++) {
-            ch = car[a + 10] + ' ' + car[b + 10];
-//      c.html(c.html() + ch + '<br>');
-            nbc++;
-          }
-        }
-      }
-    }
-  }
+  /*
+   for (a = 0; a < 62; a++) {
+   for (b = 0; b < 62; b++) {
+   for (c = 0; c < 62; c++) {
+   for (d = 0; d < 62; d++) {
+   for (e = 0; e < 62; e++) {
+   ch = car[a + 10] + ' ' + car[b + 10];
+   //      c.html(c.html() + ch + '<br>');
+   nbc++;
+   }
+   }
+   }
+   }
+   }
+   
+   output.html(number_format(nbc) + '<hr>' + output.html());
+   */
 
-  output.html(number_format(nbc) + '<hr>' + output.html());
-*/
-
-output.html(number_format(62*62*62*62*62,2));
+  output.html(number_format(Math.pow(62,5), 2));
 
   output.css('padding', '10px');
   output.css('border-radius', '7px');
   output.css('color', 'yellow');
+    $('img').css('borderRadius','10px');
 
+$('button').css('borderRadius','4px');
 
-
-i=1;
+  i = 1;
   var monTimer = setInterval(function() {
     $('img').trigger('click');
 //      $('#message').html(i);
@@ -65,6 +66,10 @@ i=1;
       clearInterval(monTimer);
   }, 4000);
   $('img').click(function() {
+    $('img').fadeOut(3000).fadeIn(1000);
+    
+    $('img').css('boxShadow','3px 3px 3px #aaa');
+    
     $('#message').text('L\'image a été cliquée. (' + i + ')').fadeIn(1000).fadeOut(3000);
   });
 });
