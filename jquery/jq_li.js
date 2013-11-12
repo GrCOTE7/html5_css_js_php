@@ -10,7 +10,6 @@ $(function() {
   var car = [];
   var cod = [];
   var code = '';
-
   for (i = 0; i < 10; i++) {
     car[i] = i;
     cod[i] = i + 48;
@@ -47,14 +46,38 @@ $(function() {
    output.html(number_format(nbc) + '<hr>' + output.html());
    */
 
-  output.html(number_format(Math.pow(62,5), 2));
-
+  output.html(number_format(Math.pow(62, 5), 2));
   output.css('padding', '10px');
   output.css('border-radius', '7px');
   output.css('color', 'yellow');
-    $('img').css('borderRadius','10px');
+  $('img').css('borderRadius', '10px');
+  $('button').css('borderRadius', '4px');
 
-$('button').css('borderRadius','4px');
+
+
+  function page_cible() {
+    var la_page = window.open("http://localhost/js_php/jquery/uuu.html");
+  }
+
+//  page_cible();
+
+
+$('#page_cible').css('color','blue');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   i = 1;
   var monTimer = setInterval(function() {
@@ -67,9 +90,7 @@ $('button').css('borderRadius','4px');
   }, 4000);
   $('img').click(function() {
     $('img').fadeOut(3000).fadeIn(1000);
-    
-    $('img').css('boxShadow','3px 3px 3px #aaa');
-    
+    $('img').css('boxShadow', '3px 3px 3px #aaa');
     $('#message').text('L\'image a été cliquée. (' + i + ')').fadeIn(1000).fadeOut(3000);
   });
 });

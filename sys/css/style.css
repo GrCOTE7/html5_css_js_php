@@ -196,9 +196,11 @@ header, section, footer {
 
 #HTML_JQuery div{
   background-color: red;
+  border-radius: 7px;
 }
 
 
 #uuu div{
   background-color: aqua;
+
 }
