@@ -22,6 +22,8 @@
 
   <body>
     <div id='rep'></div>
+    <div id='texteJQ'></div>
+    <hr>
     <div>Elément 0</div>
     <div>Elément 1</div>
     <div>Elément 2</div>
@@ -32,11 +34,8 @@
     <div>Elément 7</div>
     <div>Elément 8</div>
     <div>Elément 9</div>
-<!--
-//      $(function() {
-//        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
-//      });
--->
+
+
     <script src="uuu.js"></script>
   </body>
 </html>

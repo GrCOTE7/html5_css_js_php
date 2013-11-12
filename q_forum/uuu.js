@@ -4,6 +4,11 @@ divsLen = divs.length;
 
 console.log(divsLen);
 
+      $(function() {
+        $('#texteJQ').html('Hello world ! Ce texte est affiché par jQuery.');
+      });
+
+
 for (var i = 0; i < divsLen; i++) {
 
   (function(i) {
