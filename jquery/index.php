@@ -36,14 +36,11 @@
 
     Cliquez sur l'image<br />
     <img src="./img/chat.jpg" alt=' '><br />
+    <button>Cliquez ici</button>
     <span id='message'></span>
-
+    <div id='code'></div>
     <script>
-      $(function() {
-        $('img').one('click', function() {
-          $('#message').html('Vous avez cliqué sur l\'image. Désormais, je resterai insensible aux clics.').fadeIn(2000).fadeOut(7000);
-        });
-      });
+
     </script>
   </body>
 </html>
