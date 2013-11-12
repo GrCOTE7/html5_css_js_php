@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="http://cote7.com/favicon.ico"/>
     <link rel="icon" type="image/x-icon"  href="http://cote7.com/favicon.ico"/>
 
-    <link rel="stylesheet" href="../sys/css/style.css">
+    <!--<link rel="stylesheet" href="../sys/css/style.css">-->
     <style>
       div {
         display: none;
@@ -18,18 +18,20 @@
 
   <body>
     <span id='texteJQ'></span>
-    <hr>
-    <div id='rep'></div>
-    <div>Elément 0</div>
-    <div>Elément 1</div>
-    <div>Elément 2</div>
-    <div>Elément 3</div>
-    <div>Elément 4</div>
-    <div>Elément 5</div>
-    <div>Elément 6</div>
-    <div>Elément 7</div>
-    <div>Elément 8</div>
-    <div>Elément 9</div>
+
+    <div id="listes">
+      <ul id="ul1">
+        <li> Elément de liste 1
+          <ul id="ul2">
+            <li> Enfant 1</li>
+            <li> Enfant 2</li>
+          </ul>
+        </li>
+        <li> Elément de liste 2</li>
+        <li> Elément de liste 3</li>
+        <li> Elément de liste 4</li>
+      </ul>
+    </div>
 
     <script src="../sys/lib/jquery-2.0.3.min.js"></script>
     <script src="../sys/lib/notifier_c7.js"></script>

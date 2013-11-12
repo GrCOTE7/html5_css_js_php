@@ -56,7 +56,7 @@ strong{
   background-color: yellow;
 }
 
-ol{
+ol_li{
   list-style-type: upper-roman;
   /*list-style-type: square;*/
   /*border: 1px solid red;*/
