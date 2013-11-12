@@ -7,14 +7,14 @@ $(function() {
 
   var i = 0, ch = '';
   var c = $('#code');
-var car=[];
+  var car = [];
 
   for (i = 0; i < 10; i++) {
-    car[i]=i;
+    car[i] = i;
   }
   for (i = 1; i <= 26; i++) {
-    car[i+9]=String.fromCharCode(i+64);
-    car[i+35]=String.fromCharCode(i+96);
+    car[i + 9] = String.fromCharCode(i + 64);
+    car[i + 35] = String.fromCharCode(i + 96);
   }
 
 //ch=car[29];
@@ -24,13 +24,13 @@ var car=[];
 
   for (a = 0; a < 3; a++) {
     for (b = 0; b < 3; b++) {
-      ch = car[a+10] + ' ' + car[b+10];
+      ch = car[a + 10] + ' ' + car[b + 10];
       c.html(c.html() + ch + '<br>');
     }
   }
 
 
-      c.html(c.html() + ch + '<br>');
+  c.html(c.html() + ch + '<br>');
 
 
 
