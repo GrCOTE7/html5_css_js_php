@@ -28,7 +28,7 @@
       Commentaires
       <textarea rows="3" name="commentaires">Tapez vos commentaires ici</textarea><br />
  
-      <input type="image" src="img/chat.jpg"><br />
+      <input type="image" src="img/chat.jpg" alt=" "><br />
  
       <input type="submit" value="Envoyer">
       <input type="reset" value="Annuler">
