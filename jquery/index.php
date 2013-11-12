@@ -24,18 +24,28 @@
   <body>
 
 
-    <p>Paragraphe 1</p>
-    <p>Paragraphe 2</p>
-    <p>Paragraphe 3</p>
-    un texte isolé
-    <p>Paragraphe 4</p>
-    un autre texte isolé
+    
 
+    <span id="resultat"></span>
 
     <script src="../sys/lib/jquery-2.0.3.min.js"></script>
     <script src="../sys/lib/notifier_c7.js"></script>
     <script src="../sys/lib/fct_li-0.0.1.js"></script>
     <script src="jq_li.js"></script>
+
+
+
+
+<script>
+  $(function() {
+    $(window).resize(function() {
+      var taille = 'Taille de la fenêtre : ' + $(window).width() + 'px x ' + $(window).height() + 'px';
+      $('#resultat').text(taille);
+    });
+  });
+    </script>
+
+    
     
   </body>
 </html>
