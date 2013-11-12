@@ -25,12 +25,19 @@ $(function() {
   $('h2').css('textTransform', 'capitalize');
 
 
+  $('reponse').text(function(index, actuel) {
+    $(':radio[id="r1"]:checked').val();
+//    alert('Paragraphe ' + (index + 1) + ' : ' + actuel);
+  });
+
+
+
   $('a').hover(
       function() { // Survol
-        q.css('color', 'red');
+        $('.reponse').css('color', 'red');
       },
       function() { // Pas survol
-        q.css('color', 'black');
+        $('.reponse').css('color', 'black');
       }
   );
 
