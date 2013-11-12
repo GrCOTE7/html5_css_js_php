@@ -8,30 +8,32 @@
     <link rel="icon" type="image/x-icon"  href="http://cote7.com/favicon.ico"/>
 
     <link rel="stylesheet" href="../sys/css/style.css">
-    <style>
-      div {
-        display: none;
-        margin: 5px;
-      }
-    </style>
+
   </head>
 
   <body>
     <!--<span id='texteJQ'></span>-->
 
-    <div id="listes">
-      <ul id="ul1">
-        <li> Elément de liste 1
-          <ul id="ul2">
-            <li> Enfant 1</li>
-            <li> Enfant 2</li>
-          </ul>
-        </li>
-        <li> Elément de liste 2</li>
-        <li> Elément de liste 3</li>
-        <li> Elément de liste 4</li>
-      </ul>
-    </div>
+ <form>
+      Nom d'utilisateur
+      <input type="text" name="nom"><br />
+ 
+      Mot de passe
+      <input type="password" name="pass"><br />
+ 
+      Sexe
+      Homme <input type="radio" name="sexe" value="H">
+      Femme <input type="radio" name="sexe" value="F"><br />
+ 
+      Commentaires
+      <textarea rows="3" name="commentaires">Tapez vos commentaires ici</textarea><br />
+ 
+      <input type="image" src="img/chat.jpg"><br />
+ 
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Annuler">
+    </form> 
+
 
     <script src="../sys/lib/jquery-2.0.3.min.js"></script>
     <script src="../sys/lib/notifier_c7.js"></script>
