@@ -10,46 +10,39 @@
     <link rel="stylesheet" href="../sys/css/style.css">
 
 
-    <style type="text/css">
-      span{display: block;}
-      .rouge { color: red; }
-      .vert { color: green; 
-      font-size:150%}
-      .petit { font-size: 100%; }
-      .grand {font-size: 250%; }
+   <style type="text/css">
+      #parent {
+        width: 250px;
+        height:250px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        background-color: yellow;
+      }
+       
+      #enfant {
+        width: 100px;
+        height:100px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        background-color: red;
+      }
     </style>
 
+    
+    
   </head>
 
   <body>
-    <span id='texteJQ'></span>
-
-
-
-    <form>
-      Nom d'utilisateur
-      <input type="text" id="nom"><br />
- 
-      Mot de passe
-      <input type="password" id="pass"><br />
- 
-      Sexe 
-      H <input type="radio" id="sexe" name="H" value="H">
-      F <input type="radio" id="sexe" name="F" value="F"><br />
- 
-      Fonction
-      <select id="fonction">
-        <option VALUE="etudiant">Etudiant</option>
-        <option VALUE="ingenieur">Ingénieur</option>
-        <option VALUE="enseignant">Enseignant</option>
-        <option VALUE="retraite">Retraité</option>
-        <option VALUE="autre">Autre</option>
-      </select><br /><br />
- 
-      <input type="submit" id="envoyer" value="Envoyer">
-      <input type="reset" id="annuler" value="Annuler">
-    </form> 
-
+   
+   <div id="parent">
+      Texte dans le parent
+      <div id="enfant">
+        Texte dans l'enfant
+      </div>
+    </div>
+    <span id="resultat"></span>    
 
 
     <script src="../sys/lib/jquery-2.0.3.min.js"></script>
