@@ -17,4 +17,4 @@ include_once('./inc/head_li.php');
 
 
   <?php
-  include_once './inc/inc_lib.php';
+  include_once './inc_lib.php';
