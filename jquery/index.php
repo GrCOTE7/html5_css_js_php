@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="../sys/css/style.css">
 
 
-   <style>
-   
-     
+    <style>
+
+
       div { background: red;}
-     
+
     </style>
 
-    
-    
+
+
   </head>
 
   <body>
-   
+
 
     <p>Paragraphe 1</p>
     <p>Paragraphe 2</p>
@@ -36,5 +36,6 @@
     <script src="../sys/lib/notifier_c7.js"></script>
     <script src="../sys/lib/fct_li-0.0.1.js"></script>
     <script src="jq_li.js"></script>
+    
   </body>
 </html>

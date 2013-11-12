@@ -1,7 +1,7 @@
 $(function() {
 
-//  $('.reponse').hide();
-
+  // Dissimulation des réponses
+  $('.reponse').hide();
 
   var q = $('.question');          //Mémorisation du sélecteur dans une variable pour optimiser le code
   q.css('background', '#9EEAE0');  //Couleur d'arrière-plan
@@ -10,8 +10,7 @@ $(function() {
   q.css('width', '95%');         //Largeur des balises <div> de classe « question »
   q.css('height', '200px');        //Hauteur des balises <div> de classe « question »
   q.css('margin', '15px auto');         //Marge autour des balises <div> de classe « question »
-  q.css('padding', '10px');         //Marge autour des balises <div> de classe « question »
-  q.css('border-radius', '10px');
+  q.css('padding', '10px').css('border-radius', '10px');
 
   $('.texte').css('float', 'left');
   $('.texte').css('width', '90%');
@@ -25,23 +24,36 @@ $(function() {
   $('h2').css('textTransform', 'capitalize');
 
 
-  $('reponse').text(function(index, actuel) {
-    $(':radio[id="r1"]:checked').val();
-//    alert('Paragraphe ' + (index + 1) + ' : ' + actuel);
-  });
 
+//  $('a').html(bonnesRep);
 
+  var bonnesRep = ['r1', 'r4', 'r8'];
 
   $('a').hover(
-      function() { // Survol
-        $('.reponse').css('color', 'red');
+      function() {
+        $('.reponse').show();
+
+        $('h2').each(function(index) {
+
+          if ($(':radio[id=' + bonnesRep[index] + ']:checked').val()) {
+            $('#img' + (index + 1)).attr('src', './img/bon.png');
+            $('#reponse' + (index + 1)).css('color', 'green');
+          }
+          else {
+            $('#img' + (index + 1)).attr('src', './img/mauvais.png');
+            $('#reponse' + (index + 1)).css('color', 'red');
+          }
+        });
+
       },
-      function() { // Pas survol
-        $('.reponse').css('color', 'black');
+      function() {
+        $('.reponse').hide();
+
+        $('img').each(function() {
+          $(this).attr('src', './img/question.png');
+        });
+
       }
   );
-
-
-
 
 });
