@@ -24,7 +24,7 @@
   <body>
 
 
-    
+
 
     <span id="resultat"></span>
 
@@ -34,18 +34,16 @@
     <script src="jq_li.js"></script>
 
 
+    Cliquez sur l'image<br />
+    <img src="./img/chat.jpg" alt=' '><br />
+    <span id='message'></span>
 
-
-<script>
-  $(function() {
-    $(window).resize(function() {
-      var taille = 'Taille de la fenêtre : ' + $(window).width() + 'px x ' + $(window).height() + 'px';
-      $('#resultat').text(taille);
-    });
-  });
+    <script>
+      $(function() {
+        $('img').one('click', function() {
+          $('#message').html('Vous avez cliqué sur l\'image. Désormais, je resterai insensible aux clics.').fadeIn(2000).fadeOut(7000);
+        });
+      });
     </script>
-
-    
-    
   </body>
 </html>
