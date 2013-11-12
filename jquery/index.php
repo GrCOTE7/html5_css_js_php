@@ -1,8 +1,8 @@
 <?php
-$title = 'HTML JS PHP | Li';
+$title = 'HTML_JQuery';
 include_once('./inc/head_li.php');
 ?>
-<div id='uuu'>
+
 
 
   <span id="resultat"></span>
@@ -18,7 +18,3 @@ include_once('./inc/head_li.php');
 
   <?php
   include_once './inc/inc_lib.php';
-  ?>
-</div>
-</body>
-</html>

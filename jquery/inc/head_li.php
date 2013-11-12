@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title><?php echo $title;  ?></title>
+    <title><?php echo $title . ' | Li'; ?></title>
 
     <link rel="shortcut icon" href="http://cote7.com/favicon.ico"/>
     <link rel="icon" type="image/x-icon"  href="http://cote7.com/favicon.ico"/>
 
     <link rel="stylesheet" href="../sys/css/style.css">
-  
+
   </head>
 
   <body>
+    <div id=<?php echo $title;
