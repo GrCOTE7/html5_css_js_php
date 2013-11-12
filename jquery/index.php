@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="http://cote7.com/favicon.ico"/>
     <link rel="icon" type="image/x-icon"  href="http://cote7.com/favicon.ico"/>
 
-    <!--<link rel="stylesheet" href="../sys/css/style.css">-->
+    <link rel="stylesheet" href="../sys/css/style.css">
     <style>
       div {
         display: none;
@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <span id='texteJQ'></span>
+    <!--<span id='texteJQ'></span>-->
 
     <div id="listes">
       <ul id="ul1">

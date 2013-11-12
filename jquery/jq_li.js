@@ -3,7 +3,7 @@ var divs = document.getElementsByTagName('div'),
 
 $(function() {
   $('body').css('font-size','17px');
- $('.rouge').css('background','red').css('color','yellow').css('border-radius','7px');
+// $('.rouge').css('background','red').css('color','yellow').css('border-radius','7px');
 });
 
 
