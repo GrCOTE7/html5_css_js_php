@@ -85,16 +85,17 @@ output.html($('h4').html());
 
   i = 1;
   var monTimer = setInterval(function() {
-    $('img').trigger('click');
+    $('img').trigger('click', 'par JQUERY');
 //      $('#message').html(i);
 //    c.html(c.html() + '<br>' + 'Le code : ' + ch);
     i++;
     if (i > 10)
       clearInterval(monTimer);
   }, 4000);
-  $('img').click(function() {
+  $('img').click(function(event, texte) {
+    texte =  ( (texte== undefined) ? 'par MOI' : texte );
     $('img').fadeOut(3000).fadeIn(1000);
     $('img').css('boxShadow', '3px 3px 3px #aaa');
-    $('#message').text('L\'image a été cliquée. (' + i + ')').fadeIn(1000).fadeOut(3000);
+    $('#message').text('L\'image a été cliquée '+texte+'. (' + i + ')').fadeIn(1000).fadeOut(3000);
   });
 });

@@ -24,11 +24,11 @@ Cliquez sur l'image<br />
 
 <?php
 
-for ($index = 0; $index < 10; $index++) {
-  echo $index;
+for ($index = 0; $index < 2e2; $index++) {
+  echo $index . ' ';
+  
 }
 ?>
-
 
 
 
