@@ -212,3 +212,11 @@ header, section, footer {
   background-color: blue;
   color:red;
 }
+
+#Event_JQuery div {
+  background:yellow; 
+  font-weight:bold; 
+  cursor:pointer; 
+  padding:8px;
+  border-radius: 7px;
+}
