@@ -8,12 +8,12 @@ $(function() {
 
 
 
-  var file = './img/bon.png';
+  var file = 'http://localhost/js_php/jquery/img/bon_rd.png';
 
+
+  
   var imgs = document.querySelectorAll('#Event_JQuery img');
-
-
-  $('#Event_JQuery').html(imgs);
+//  $('#Event_JQuery').html(imgs[0].src);
 
 
 
