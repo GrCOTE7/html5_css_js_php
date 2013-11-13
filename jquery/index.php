@@ -23,11 +23,12 @@ Cliquez sur l'image<br />
 <div><br /></div>
 
 <?php
-
-for ($index = 0; $index < 2e2; $index++) {
-  echo $index . ' ';
+$i=0;
+do{
+  echo $i.' ';
   
-}
+} while  (++$i<100);
+echo '<hr>Fini';
 ?>
 
 
