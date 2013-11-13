@@ -6,17 +6,6 @@ include_once('./inc/head_li.php');
 
 
 
-<div id="master" class='event'>
-  <div class='event'>Cliquez pour insérer un autre &ltdiv&gt</div>
-</div>
-
-
-
-
-
-
-
-
 
 
 
