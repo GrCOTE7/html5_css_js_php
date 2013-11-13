@@ -6,7 +6,9 @@ $(function() {
     $(this).after('<div class="event">Ce &lt;div&gt; a les mêmes caractéristiques que son parent</div>');
   });
 
-//Pour ssssupprimer la déléguation d'évènement'
-//$('#del').off('ev', 'sel');
+//Pour supprimer la déléguation d'évènement'
+  $('#suppr').on('click', function() {
+    $('.event').off('click', '.event');
+  });
 
 });

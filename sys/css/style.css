@@ -212,11 +212,10 @@ header, section, footer {
   color:red;
 }
 
-#Event_JQuery div {
+#Event_Deleguation_JQ div {
   background:yellow; 
   font-weight:bold; 
   cursor:pointer; 
-  margin:7px;
   padding: 8px 15px;
   border-radius: 7px;
 }

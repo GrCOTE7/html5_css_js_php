@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div id=
-         <?php
-         echo $title . '>';
-         
+    <?php
+    echo "<div id=$title>";
+    ?>
+      

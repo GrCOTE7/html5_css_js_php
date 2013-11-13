@@ -1,7 +1,8 @@
 <?php
-$title = 'Event_JQuery';
+$title = 'Event_Deleguation_JQ';
 include_once('./inc/head_li.php');
 ?>
+<button id="suppr">Supprimer la délégation d'événements</button><br>&nbsp;
 <div id="master" class='event'>
   <div class='event'>Cliquez pour insérer un autre &ltdiv&gt</div>
 </div>
