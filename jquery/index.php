@@ -3,12 +3,7 @@ $title = 'Event_JQuery';
 include_once('./inc/head_li.php');
 ?>
 
-
-
-
-
-
-
+oOo
 
 
 
