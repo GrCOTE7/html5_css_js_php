@@ -1,19 +1,24 @@
-<style>
-  div { 
-    background:yellow; 
-    font-weight:bold; 
-    cursor:pointer; 
-    padding:8px; 
-  }
-</style>
-
-<div id="master">
-  <div class='event'>Cliquez pour insérer un autre &ltdiv&gt</div>
-</div>
+<button id="affiche">Faire apparaître les lignes paires</button>
+<button id="cache">Faire disparaître les lignes paires</button><br />
+<table border>
+  <tr><td>a</td><td>b</td><td>c</td></tr>
+  <tr><td>d</td><td>e</td><td>f</td></tr>
+  <tr><td>g</td><td>h</td><td>i</td></tr>
+  <tr><td>j</td><td>k</td><td>l</td></tr>
+  <tr><td>m</td><td>n</td><td>o</td></tr>
+</table>
 
 <script src="jquery.js"></script>
 <script>
-  $('#master').on('click', '.event', function(){
-    $(this).after('<div class="event">Ce &lt;div&gt; a les mêmes caractéristiques que son parent</div>');
+  $(function() {
+    $('tr:even').css('background','yellow');
+    $('td').css('width','200px');
+    $('td').css('text-align','center');
+    $('#affiche').click(function() {
+      $('tr:even').show('slow');
+    } ); 
+    $('#cache').click(function() {
+      $('tr:even').hide(1000);
+    });
   });
 </script>

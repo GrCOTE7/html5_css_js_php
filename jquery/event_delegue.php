@@ -2,7 +2,10 @@
 $title = 'Event_Deleguation_JQ';
 include_once('./inc/head_li.php');
 ?>
-<button id="suppr">Supprimer la délégation d'événements</button><br>&nbsp;
+<p style='text-align:justify;'>
+  La délégation d'événements permet de cloner la gestion événementielle d'un élément à un ou plusieurs de ses enfants créés à la volée dans le code jQuery. Peu importe le nombre d'éléments créés : ils se comporteront tous (d'un point de vue événementiel) comme leur parent. Et ce, sans qu'aucun code supplémentaire ne soit écrit.</p>
+<hr>
+<button id="suppr">Supprimer la délégation d'événements</button><br /><br />
 <div id="master" class='event'>
   <div class='event'>Cliquez pour insérer un autre &ltdiv&gt</div>
 </div>
