@@ -19,8 +19,31 @@ Cliquez sur l'image<br />
 <h4>Page Cible :</h4>
 <iframe id="page_cible" name="frame" src="http://localhost/js_php/jquery/page_cible.html" style="height: 100px; width: 95%; border:1x solid red; margin: 0 auto;">
 </iframe>
- 
+
 <div><br /></div>
+
+<?php
+
+for ($index = 0; $index < 10; $index++) {
+  echo $index;
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
