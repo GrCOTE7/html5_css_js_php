@@ -1,0 +1,19 @@
+<style>
+  div { 
+    background:yellow; 
+    font-weight:bold; 
+    cursor:pointer; 
+    padding:8px; 
+  }
+</style>
+
+<div id="master">
+  <div class='event'>Cliquez pour insérer un autre &ltdiv&gt</div>
+</div>
+
+<script src="jquery.js"></script>
+<script>
+  $('#master').on('click', '.event', function(){
+    $(this).after('<div class="event">Ce &lt;div&gt; a les mêmes caractéristiques que son parent</div>');
+  });
+</script>

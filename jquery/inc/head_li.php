@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <?php if (0) { ?>
+      <link rel="stylesheet" href="../../sys/css/style.css">
+    <?php } ?>
     <meta charset="UTF-8" />
     <title><?php echo $title . ' | Li'; ?></title>
 
@@ -12,4 +15,6 @@
   </head>
 
   <body>
-    <div id=<?php echo $title;
+    <div id=<?php
+         echo $title;
+         

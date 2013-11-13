@@ -46,7 +46,6 @@ strong{
 
 #items li a {
   text-decoration: none;
-  border: 2px solid none;
 }
 #items li a:hover {
   color:red;
@@ -217,6 +216,7 @@ header, section, footer {
   background:yellow; 
   font-weight:bold; 
   cursor:pointer; 
-  padding:8px;
+  margin:7px;
+  padding: 8px 15px;
   border-radius: 7px;
 }
