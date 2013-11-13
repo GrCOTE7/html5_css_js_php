@@ -36,58 +36,9 @@ include_once('./inc/head_li.php');
 
 
 <?php
-
-
-
-
-
-for ($index = 1; $index < 1e2; $index++) {
-  $class = ($index % 10 == 0) ? 'red' : 'blue';
-  if ($index % 5 == 0) {
-    echo '<span class=' . $class . '> ' . $index . '</span>';
-  }
+for ($index = 1; $index <= 1e2; $index+=3) {
+  echo '<span class=' . ( ($index % 10) ? 'blue' : 'red' ) . '> ' . $index . '</span>';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
 
 
