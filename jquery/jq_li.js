@@ -64,8 +64,11 @@ $(function() {
 
 $('#page_cible').css('color','blue');
 
+$('#page_cible').html('ot');
+$('h4').html('ot21');
 
-output.html($('#page_cible').value);
+
+output.html($('h4').html());
 
 
 
