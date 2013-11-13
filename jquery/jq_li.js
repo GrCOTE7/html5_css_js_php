@@ -2,19 +2,18 @@ $(function() {
 
   Notifier.c7('Go !');
 
+  $('button').first().before('<div id="myAff"></div>');
+  var aff = $('#myAff');
 
 
+  var imgs = document.querySelectorAll('#Event_JQuery img'), limg, result = '';
+  $.each(imgs, function name(parameters) {
+    limg = this.src.split("/");
+    result += limg[limg.length - 1].split('.png');
+  });
 
 
-
-
-  var file = 'http://localhost/js_php/jquery/img/bon_rd.png';
-
-
-  
-  var imgs = document.querySelectorAll('#Event_JQuery img');
-//  $('#Event_JQuery').html(imgs[0].src);
-
+//  aff.html(result);
 
 
   $('tr:odd').css('background', 'yellow');
@@ -29,13 +28,16 @@ $(function() {
   $('#cache').click(function() {
     $('tr:odd').hide(1000);
   });
-});
 
-$(function() {
-  $('#afficheImg').click(function() {
-    $('img').first().show('slow', function showNextOne() {
-      $(this).next('img').show('slow', showNextOne);
-      Notifier.success('Image');
+
+
+  $('#afficheImg').click(function(result) {
+    $('img').first().show('super-slow', function showNextOne() {
+      $(this).next('img').show('super-slow', showNextOne);
+
+      limg = this.src.split("/");
+      result = limg[limg.length - 1].split('.png');
+      Notifier.success('Image ', result[0]);
     });
   });
   $('#cacheImg').click(function() {
@@ -43,6 +45,4 @@ $(function() {
       $(this).next('img').hide('slow', hideNextOne);
     });
   });
-
-
 });
