@@ -219,3 +219,15 @@ header, section, footer {
   padding: 8px 15px;
   border-radius: 7px;
 }
+
+#Anim_JQuery #myImg{
+  
+}
+#Anim_JQuery #myCpt{
+  display: inline-block;
+  float: right;
+  width:85%;
+  border-radius: 10px;
+  padding: 5px 7px;
+  
+}

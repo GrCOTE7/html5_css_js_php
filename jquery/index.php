@@ -1,46 +1,25 @@
 <?php
-$title = 'Event_JQuery';
+$title = 'Anim_JQuery';
 include_once('./inc/head_li.php');
 ?>
 
 
 
 
+<img id='myImg' src="img/bon_rd.png" width="46" height="46" alt="bon_rd" style='display: inline-block; vertical-align: top'/>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div id='myCpt'>
 
 <?php
 for ($index = 1; $index <= 1e2; $index+=3) {
   echo '<span class=' . ( ($index % 10) ? 'blue' : 'red' ) . '> ' . $index . '</span>';
 }
-?>
 
+?>
+</div>
 
 
 

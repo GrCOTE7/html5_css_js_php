@@ -42,7 +42,7 @@ include_once('./inc/head_li.php');
 <?php
 include_once './inc_lib.php';
 ?>
-<script src="jq_li.js"></script>
+<script src="show-hide.js"></script>
 
 <?php
 include_once './inc/footer_li.php';
