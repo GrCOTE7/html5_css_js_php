@@ -1,13 +1,18 @@
 $(function() {
 
   Notifier.c7('Go !');
+  
+   
   $('body').css('display', 'none');
-  $('body').fadeTo(2000, 0.5);
+  $('body').delay(3000).fadeTo(2000, 0.5);
   $('body').fadeTo(1000, .1);
   $('body').fadeTo(5000, 1);
 
+$('#message').fadeIn('slow').delay(10000).fadeOut(3000);
 
-
+  setTimeout(function(){
+$('span#message').remove();
+  },25000);
 
 
   $('.stopAnim').click(function() {

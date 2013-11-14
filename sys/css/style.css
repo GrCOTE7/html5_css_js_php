@@ -223,7 +223,7 @@ header, section, footer {
 
 #Anim_JQuery #myImg{
   display: inline-block;  
-  margin-top:25px;
+  margin-top:10px;
 }
 
 #Anim_JQuery #myCpt{
@@ -242,5 +242,13 @@ header, section, footer {
   display: inline-block;  
   float: right;
   /*margin-top:25px;*/
+}
+
+#Anim_JQuery #message{
+  display: block;
+  text-align: center;
+  color:red;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
