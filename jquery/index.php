@@ -1,12 +1,21 @@
 <?php
 $title = 'Anim_JQuery';
 include_once('./inc/head_li.php');
+
+
+
 ?>
 
 
 
 
-<img id='myImg' src="img/bon_rd.png" width="46" height="46" alt="bon_rd" style='display: inline-block; vertical-align: top'/>
+
+<div id ='myJq'></div>
+
+
+<div id="myImg">
+<img src="img/bon_rd.png" width="46" height="46" alt="bon_rd" />
+</div>
 
 
 
@@ -20,9 +29,9 @@ for ($index = 1; $index <= 1e2; $index+=3) {
 
 ?>
 </div>
-
-
-
+<hr>
+<div class='stopAnim' id ='stopAnim'>Stop Anim</div>
+<div class='execAnim' id = 'execAnim'>Exec Anim</div>
 
 
 

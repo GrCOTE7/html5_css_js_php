@@ -220,14 +220,27 @@ header, section, footer {
   border-radius: 7px;
 }
 
+
 #Anim_JQuery #myImg{
-  
+  display: inline-block;  
+  margin-top:25px;
 }
+
 #Anim_JQuery #myCpt{
   display: inline-block;
   float: right;
-  width:85%;
+  width:80%;
   border-radius: 10px;
   padding: 5px 7px;
-  
 }
+
+#Anim_JQuery #stopAnim{
+  display: inline-block;  
+  /*margin-top:25px;*/
+}
+#Anim_JQuery #execAnim{
+  display: inline-block;  
+  float: right;
+  /*margin-top:25px;*/
+}
+
