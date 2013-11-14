@@ -10,7 +10,7 @@ include_once('./inc/head_li.php');
 
 
 
-<!--<div id ='myJq'></div>-->
+<div id ='myJq'></div>
 
 <span id="message"><mark> Ce texte sera affiché pendant deux secondes </mark></span>
 
