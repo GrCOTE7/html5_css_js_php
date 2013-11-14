@@ -7,21 +7,6 @@ include_once('./inc/head_li.php');
 
 
 
-<div id='myCpt'>
-
-<?php
-for ($index = 1; $index <= 1e2; $index+=3) {
-  echo '<span class=' . ( ($index % 10) ? 'blue' : 'red' ) . '> ' . $index . '</span>';
-}
-
-?>
-</div>
-<hr>
-<div class='stopAnim' id ='stopAnim'>Stop Anim</div>
-<div class='execAnim' id = 'execAnim'>Exec Anim</div>
-
-
-
 
 
 
