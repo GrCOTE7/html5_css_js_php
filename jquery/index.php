@@ -5,8 +5,7 @@ include_once('./inc/head_li.php');
 
 <div id ='myJq'></div>
 
-
-
+<img src="img/c7.png" width="189" height="117" alt="c7"/>
 
 
 
