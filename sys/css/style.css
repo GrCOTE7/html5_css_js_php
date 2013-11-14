@@ -236,19 +236,18 @@ header, section, footer {
 
 #Anim_JQuery #stopAnim{
   display: inline-block;  
-  /*margin-top:25px;*/
 }
 #Anim_JQuery #execAnim{
   display: inline-block;  
   float: right;
-  /*margin-top:25px;*/
 }
 
 #Anim_JQuery #message{
   display: block;
   text-align: center;
   color:red;
-  padding-bottom: 10px;
+  padding: 0 10px 10px 10px;
   border-bottom: 1px solid #ccc;
+  border: 1px solid red;
 }
 
