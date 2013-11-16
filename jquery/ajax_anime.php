@@ -14,21 +14,6 @@
   <body>
 
     <div id='exo'>
-      <div id='lionel'></div>
-
-
-      <section id='fondu'>
-
-        <div id='aaa'></div>
-        <div id='bbb'></div>
-        
-        <div id='nb0'></div>
-        <div id='bb1'></div>
-
-
-      </section>
-
-
 
       <section id='buttons'>
 
@@ -84,7 +69,6 @@
         setTimeout(function() {
           $('#premier').load('maj1.html', function() {
             $('#premier').fadeTo(2000, 1).delay(3000);
-            $('#premier').fadeTo(2000, 0).delay(3000);
             Notifier.success('Par AJAX', 'La première zone a été mise à jour');
           });
         }, 5000);
@@ -112,103 +96,8 @@
             }, 5000);
 
           });
-
-
-
-
-
-
-
-
-
-
-          var i = 'z';
-//          $('#aaa').text(heure());
-//          $('#bbb').text(++i);
-//          $('#bbb').fadeIn(3000);
-//          $('#aaa').text(i);
-//          $('#aaa').fadeOut(3000);
-
-
-
-          for (i = 0; i < 60; i++) {
-//            $('#lionel').append(pL0(i) + ' ');
-            var theNb = pL0(i);
-//            $('#lionel').append('x_div id="' + theNb + '" class="theNb">' + theNb + 'x_/div><br>');
-//            $('#fondu').append('<div id="nb' + theNb + '" class="theNb">' + theNb + '</div>');
-
-          }
-
-
-          var i = heure();
-          affiche();
-
-          function affiche() {
-//            $('#aaa').text(heure().length);
-            i++;
-            if (i == 59)
-              precedent = '#nbi'
-            else
-              precedent = '#nb' + (i - 1);
-            var actuel = '#nb' + pL0(i) + i;
-            $(precedent).fadeOut(2000);
-            $(actuel).fadeIn(2000);
-            if (i == 59)
-              i = 0;
-          }
-
-          setInterval(affiche, 1000);
-
-
-
-          function heure() {
-//            var blocHeure1 = document.getElementById('heure1'),
-//                blocHeure2 = document.getElementById('heure2');
-
-
-            var theTime = new Date(),
-                heure = theTime.getHours(),
-                minute = theTime.getMinutes(),
-                seconde = theTime.getSeconds();
-
-//            if (seconde % 5 === 0) {
-//              Notifier.c7('It\'s time !!!', 'Wake UP !');
-//            }
-
-//            return pL0(heure) + ':' + pL0(minute) + ':' + pL0(seconde);
-            return pL0(seconde);
-//              blocHeure2.innerHTML = pL0(heure) + ':' + pL0(minute) + ':' + pL0(seconde);
-
-          }
-          function pL0(value) { // Première Lettre 0 si <10
-            return (value > 9) ? value : '0' + value;
-          }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          //          $('#majPremier').fadeOut(7000);
-          //          $('#majPremier').css('display', 'none');
+//          $('#majPremier').fadeOut(7000);
+//          $('#majPremier').css('display', 'none');
 //          
 
           //$('#exo img').attr('src', 'img/chat.jpg').fadeIn(3000);
