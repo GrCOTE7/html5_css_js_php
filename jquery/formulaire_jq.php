@@ -7,7 +7,7 @@
       #contenu
       {
         width: 500px;
-        height: 400px;
+        height: 420px;
         border: 1px black solid;
         float: left;
         margin-right: 10px;
@@ -19,7 +19,7 @@
       {
         padding: 10px;
         width: 300px;
-        height: 380px;
+        height: 400px;
         border: 1px black solid;
         float: left;
       }
@@ -189,7 +189,7 @@
           var mot = $('#mot').val();
           var tableau = $('p:first').text().split(' ');
           var tableau2 = $.map(tableau, function(el, ind) {
-            if (ind + 1 == mot)
+            if (  ind + 1 === mot)
               return ('<font color="red">' + el + '</font>')
             else
               return(el);
