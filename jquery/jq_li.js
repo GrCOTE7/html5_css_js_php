@@ -24,7 +24,7 @@ $(function() {
 
 
   output += '<hr><u>Boucle de base :</u><br>';
-  for (i = 1; i < 101; i++) {
+  for (i = 7; i < 101; i++) {
     output += '<span class="' + ((i % 2) ? 'blue' : 'red') + '">' + i + '</span> ';
   }
   myJq.css('display','none');
