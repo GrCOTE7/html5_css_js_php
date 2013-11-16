@@ -1,22 +1,33 @@
-<span id="status">Cliquez sur un des éléments du formulaire</span><br /><br />
-<form>
-  <input type="text" id="zone1"><br />
-  <input type="text" id="zone2"><br />
-  <input type="text" id="zone3"><br />
-  <textarea id="zone4"></textarea>
-</form>    
+<span id="un"></span><br /><br />
+<span id="deux"></span><br /><br />
+<button id="filtre1">Après le cinquième</button>
+<button id="filtre2">Différent de Mathis, Hugo et Yanis</button>
+<button id="filtre3">Avant le cinquième</button>
+
 
 <script src="jquery.js"></script>
 <script>
   $(function() {
-    var leFocus;  
-    $('input, textarea').focus( function() { 
-      leFocus = '#' + $(this).attr('id');        
-      $(leFocus).css('background-color', '#afc');
-    }); 
-    $('input, textarea').blur( function() { 
-      leFocus = '#' + $(this).attr('id');        
-      $(leFocus).css('background-color', '#fff');
-    }); 
+    var tableau = ['Luca', 'Emma', 'Mathis', 'Jade', 'Léa', 'Enzo', 'Chloé', 'Nathan', 'Manon', 'Noah', 'Sarah ', 'Louis', 'Luna', 'Kylian', 'Clara', 'Ethan', 'Camille', 'Hugo', 'Lylou', 'Théo', 'Zoé', 'Yanis', 'Maélys'];
+    var tableau2;
+    $('#un').text('Données originales : ' + tableau.join(', '));
+    $('#filtre1').click(function() {
+      tableau2 = $.grep(tableau, function(el, ind) {
+        return (ind > 4);
+      });
+      $('#deux').text('Après le cinquième : ' + tableau2.join(', '));
+    });
+    $('#filtre2').click(function() {
+      tableau2 = $.grep(tableau, function(el, ind) {
+        return (el != 'Mathis' && el != 'Hugo' && el != 'Yanis');
+      });
+      $('#deux').text('Différent de Mathis, Hugo et Yanis : ' + tableau2.join(', '));
+    });
+    $('#filtre3').click(function() {
+      tableau2 = $.grep(tableau, function(el, ind) {
+        return (ind > 4);
+      }, true);
+      $('#deux').text('Avant le cinquième : ' + tableau2.join(', '));
+    });
   });
 </script>
