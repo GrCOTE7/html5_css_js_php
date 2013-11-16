@@ -17,7 +17,7 @@ $(function() {
   monTab.forEach(function(value) {
     sortieTab += '<span class="' + ((value % 2) ? 'blue' : 'red') + '">' + value + '</span> ';
   });
-  output += '<u>Mon tableau <b>formaté</b> :</u><br>' + sortieTab;
+  output += '<u>Mon tableau <b>formaté final</b> :</u><br>' + sortieTab;
 
 
 
