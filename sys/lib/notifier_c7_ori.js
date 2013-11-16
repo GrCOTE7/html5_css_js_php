@@ -24,7 +24,7 @@
       opacity: 0.9,
       boxShadow: "#000 0 0 12px"
     },
-    container: $('<div class="liNotifC7"></div>')
+    container: $("<div></div>")
   };
   $(document).ready(function() {
 //    config.container.css("position", "absolute"); // Body
@@ -35,7 +35,7 @@
     $("body").append(config.container);
   });
   function getNotificationElement() {
-    return $('<div class="liNotifC7">').css(config.notificationStyles).hover(function() {
+    return $("<div>").css(config.notificationStyles).hover(function() {
       $(this).css(config.notificationStylesHover);
     }, function() {
       $(this).css(config.notificationStyles);
@@ -59,20 +59,20 @@
       notificationElement.append(iconElement);
     }
 
-    var textElement = $('<div class="liNotifC7">').css({
+    var textElement = $("<div/>").css({
       display: 'inline-block',
       verticalAlign: 'middle',
       padding: '0 12px'
     });
     if (title) {
-      var titleElement = $('<div class="liNotifC7">');
+      var titleElement = $("<div/>");
       titleElement.append(document.createTextNode(title));
       titleElement.css("font-weight", "bold");
       textElement.append(titleElement);
     }
 
     if (message) {
-      var messageElement = $('<div class="liNotifC7">');
+      var messageElement = $("<div/>");
       messageElement.append(document.createTextNode(message));
       textElement.append(messageElement);
     }
