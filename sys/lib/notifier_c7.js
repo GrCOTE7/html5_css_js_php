@@ -47,7 +47,7 @@
     var notificationElement = getNotificationElement();
     timeOut = timeOut || config.defaultTimeOut;
     if (iconUrl) {
-      var iconElement = $("<img/>", {
+      var iconElement = $("<img>", {
         src: iconUrl,
         css: {
           width: 36,
