@@ -1,8 +1,19 @@
 <?php
 $title = 'Array_Jq';
 include_once('./inc/head_li.php');
-?>
 
+$array=[];
+for ($index = 0; $index < 11; $index++) {
+  array_push($array, $index);
+}
+unset($array[0]);
+
+unset($array[7]);-+
+
+var_dump($array);
+
+?>
+<hr>
 <div id ='myJq'></div>
 
 
