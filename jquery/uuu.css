@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 16 nov. 2013, 14:34:37
     Author     : cote
@@ -49,11 +44,15 @@ div.ajax {
   /*position:absolute;*/
   top: 5px;
   left: 122px;
+  margin-left: 122px;
 }
 .deuxiemeLogoC7 {
   display:none;
   position: absolute;
   top: 15px;
-  left: 105px;}
+  left: 105px;
+  /*margin: 15px 0 0 105px;*/
+}
+
 #troisieme { background-color: #CAF1EC; }
 #quatrieme { background-color: #F1DBCA; }
