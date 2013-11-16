@@ -8,7 +8,7 @@ for ($index = 0; $index < 11; $index++) {
 }
 unset($array[0]);
 
-unset($array[7]);-+
+unset($array[7]);
 
 var_dump($array);
 
