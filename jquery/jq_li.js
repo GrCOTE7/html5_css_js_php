@@ -1,6 +1,6 @@
 $(function() {
 
-  Notifier.c7('Go !');
+  Notifier.c7('Go 21 ab !');
   var myJq = $('#myJq'), output = '';
 
 
@@ -10,14 +10,14 @@ $(function() {
   }
   
   
-  output = '<u>Mon tableau <b>d\'origine</b> :</u><br>' + monTab + '<hr>';
+  output = '<u>&nbsp;I / Mon tableau <b>d\'origine</b> :</u><br>' + monTab + '<hr>';
 
 
   var sortieTab = '';
   monTab.forEach(function(value) {
     sortieTab += '<span class="' + ((value % 2) ? 'blue' : 'red') + '">' + value + '</span> ';
   });
-  output += '<u>Mon tableau <b>formaté final</b> :</u><br>' + sortieTab;
+  output += '<u>II / Mon tableau <b>formaté final</b> :</u><br>' + sortieTab;
 
 
 
