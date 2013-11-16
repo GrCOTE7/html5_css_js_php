@@ -10,7 +10,8 @@
   $(function() {
     var tableau = ['Luca', 'Emma', 'Mathis', 'Jade', 'Léa', 'Enzo', 'Chloé', 'Nathan', 'Manon', 'Noah', 'Sarah ', 'Louis', 'Luna', 'Kylian', 'Clara', 'Ethan', 'Camille', 'Hugo', 'Lylou', 'Théo', 'Zoé', 'Yanis', 'Maélys'];
     var tableau2;
-    $('#un').text('Données originales : ' + tableau.join(', '));
+    $('#un').text('Données originales :'+"\n" + tableau.join(', '));
+    $('#un').append('<hr>Données originales :<br>' +tableau);
     $('#filtre1').click(function() {
       tableau2 = $.grep(tableau, function(el, ind) {
         return (ind > 4);
