@@ -1,0 +1,252 @@
+/* 
+    Created on : 27 oct. 2013, 12:12:11
+    Author     : cote
+*/
+
+
+html{
+  background-color: #fff;
+}
+
+body{
+  width:95%;
+  font-family: Trebuchet MS;
+  font-size: 16px;
+  color:#333;
+  margin: 3px auto;
+  background-color: cornsilk;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+h1{
+  font-size: 20px;
+}
+
+p{
+  margin:0;
+  padding: 0;
+  color:blue;
+  font-size: 16px;
+}
+
+.blue{
+  color: blue;
+}
+
+.true, .green{
+  color:green;
+}
+.false, .red {
+  color:red;
+}
+strong{
+  font-weight: bold;
+}
+
+#items li a {
+  text-decoration: none;
+}
+#items li a:hover {
+  color:red;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid red;
+  background-color: yellow;
+}
+
+ol_li{
+  list-style-type: upper-roman;
+  /*list-style-type: square;*/
+  /*border: 1px solid red;*/
+  text-align: center;
+  border-radius: 10px;
+  border: solid 4px orange;
+
+  -webkit-columns: 7;
+  -moz-columns: 7;
+  columns: 7;
+
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+
+  -webkit-column-rule: 5px dotted rgba(125,125,125,.2);
+  -moz-column-rule: 1em dotted #777;
+  column-rule: 1em dotted #777;
+
+  margin: 20px 0;
+  padding: 5px 0;
+  background-color: lightgoldenrodyellow;
+}
+th{
+  column-span: all;
+}
+
+header, section, footer {
+  background-color: #fcffff;
+  border-bottom: 1px solid #000;
+  box-shadow: 0px -1px 7px #333;
+  border-radius: 7px;
+  margin:7px 3px;
+  padding: 7px 15px;
+  /*transition: ease all 1s;*/
+}
+
+/*Pour html_js_php*/
+
+#etude_chronologie{
+  color:blue;
+}
+
+#calcul{
+  color:turquoise;
+  text-wrap: initial;
+  /*text-align: center;*/
+}
+
+#calcul ul{
+  /*display: table;*/
+  font-size: 18px;
+  list-style-type: none;
+  margin: 0 auto;
+  /*padding: 0 0 0 10px;*/
+  padding: 0;
+  border: 2px solid orange;
+  width:95%;
+  border-radius: 7px;
+  background-color: lightgoldenrodyellow;
+}
+
+#calcul li{
+  /*text-align: center;*/
+  display: inline-block;
+  width:75px;
+  text-align: right;
+  margin: 0 5px;
+  padding: 0 0 0 5px;
+
+  white-space: nowrap;
+  border-left: 1px solid rgba(0,0,255,0.1);
+}
+#calcul li:last-child{
+  /*border-right: none;*/
+}
+
+#calcul progress {
+  display: block;
+  width: 95%;
+  height: 2em;
+  margin: .5em auto;
+  border: 3px solid white;
+  background-color: #d4d4d4;
+  box-shadow: 0 0 0 3px #b6b6b6;
+  border-radius: 7px;
+}
+
+@-webkit-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+@-moz-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+@keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+#calcul progress::-webkit-progress-bar {
+  border-radius: 5px;
+  background-color: #d4d4d4;
+}
+#calcul progress::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: #a5d62f;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -webkit-animation: progress 8s linear infinite;
+  animation: progress 8s linear infinite;
+}
+
+#calcul progress::-moz-progress-bar {
+  border-radius: 5px;
+  background-color: #a5d62f;
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -moz-animation: progress 8s linear infinite;
+  animation: progress 8s linear infinite;
+}
+
+
+
+#HTML_JQuery div{
+  background-color: red;
+  border-radius: 7px;
+}
+
+
+#uuu div{
+  background-color: aqua;
+}
+
+#page_cible {
+  background-color: aqua;
+}
+/*#page_cible>#document>html>body>h3 {*/
+#nnn {
+  background-color: blue;
+  color:red;
+}
+
+#Event_Deleguation_JQ div {
+  background:yellow; 
+  font-weight:bold; 
+  cursor:pointer; 
+  padding: 8px 15px;
+  border-radius: 7px;
+}
+
+
+#Anim_JQuery #myImg{
+  display: inline-block;  
+  margin-top:10px;
+}
+
+#Anim_JQuery #myCpt{
+  display: inline-block;
+  float: right;
+  width:80%;
+  border-radius: 10px;
+  padding: 5px 7px;
+}
+
+#Anim_JQuery #stopAnim{
+  display: inline-block;  
+}
+#Anim_JQuery #execAnim{
+  display: inline-block;  
+  float: right;
+}
+
+#Anim_JQuery #message{
+  display: block;
+  text-align: center;
+  color:red;
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
