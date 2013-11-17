@@ -1,4 +1,5 @@
 <?php
+
 $title = 'Event_Deleguation_JQ';
 include_once('./inc/head_li.php');
 ?>
@@ -11,9 +12,26 @@ include_once('./inc/head_li.php');
 </div>
 <!--<script src="jquery.js"></script>-->
 <?php
+
 include_once './inc_lib.php';
 ?>
-<script src="event_delegue.js"></script>
+<!--<script src="event_delegue.js"></script>-->
+<script>
+  $(function() {
 
+    Notifier.c7('Go !');
+
+    $('.event').on('click', '.event', function() {
+      $(this).after('<div class="event">Ce &lt;div&gt; a les mêmes caractéristiques que son parent</div>');
+    });
+
+//Pour supprimer la déléguation d'évènement'
+    $('#suppr').on('click', function() {
+      $('.event').off('click', '.event');
+    });
+
+  });
+</script>
 <?php
+
 include_once './inc/footer_li.php';
