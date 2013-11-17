@@ -74,19 +74,14 @@
 
         $('#premier').css('display', 'none');
         $('#premier').fadeTo(1000, 1).delay(1000);
-        $('#premier').fadeTo(1000, 0);
-        $('#premier').fadeTo(1000, 1);
-        $('#premier').fadeTo(1000, 0);
-        $('#premier').fadeTo(1000, 1);
-
+     
 
         clickPossible = 0;
 
         var i = 0;
-//          affiche(i);
+          affiche(i);
 
         function affiche(i) {
-//        while (i < 10) {
 
           var monTimer = setInterval(function() {
 
