@@ -12,7 +12,7 @@
 
 
   <body>
-
+  <center><h5 style="margin:0 auto;">Ajax + FadeIn() - FadeOut();</h5></center>
     <div id='exo'>
       <div id='lionel'></div>
 
@@ -99,8 +99,6 @@
               }
             }, 1000);
           }
-
-
 
 
           Notifier.c7('Clic sur un bouton ou le Logo !');
